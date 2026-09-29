@@ -1,0 +1,41 @@
+@import "tailwindcss";
+
+@theme {
+  --color-frame: #111111;
+  --color-canvas: #F5F5F3;
+  --color-panel: #FDFDFD;
+  --color-subtle: #E6E6E2;
+  --color-accent: #D94826;
+
+  --font-sans: var(--font-space-grotesk), -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-mono: var(--font-jetbrains-mono), ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+}
+
+/* Subtle architectural drafting-grid background */
+body {
+  background-color: #F5F5F3;
+  background-image: 
+    linear-gradient(to right, rgba(17, 17, 17, 0.05) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(17, 17, 17, 0.05) 1px, transparent 1px);
+  background-size: 24px 24px;
+  color: #111111;
+}
+
+/* Thin architectural scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #F5F5F3;
+  border-left: 1px solid #E6E6E2;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #111111;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #333333;
+}
